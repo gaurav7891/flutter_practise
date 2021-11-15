@@ -1,10 +1,10 @@
 class Item {
-  int id;
-  String name;
-  String desc;
-  num price;
-  String color;
-  String image;
+  final int id;
+  final String name;
+  final String desc;
+  final num price;
+  final String color;
+  final String image;
 
   Item(
       {required this.id,
@@ -13,17 +13,27 @@ class Item {
       required this.price,
       required this.color,
       required this.image});
+
+  factory Item.fromMap(Map<String, dynamic> map) {
+    return Item(
+        id: map["id"],
+        name: map["name"],
+        desc: map["desc"],
+        price: map["price"],
+        color: map["color"],
+        image: map["image"]);
+  }
+
+  toMap() => {
+        "id": id,
+        "name": name,
+        "desc": desc,
+        "price": price,
+        "color": color,
+        "image": image
+      };
 }
 
 class CatalogModel {
-  static final items = [
-    (Item(
-        id: 1,
-        name: "Johnny Depp",
-        desc: "Samundar ka lutera",
-        price: 100,
-        color: "#fff000d",
-        image:
-            "https://static.wikia.nocookie.net/horrormovies/images/0/0b/Johnny_Depp.jpg/revision/latest/top-crop/width/360/height/450?cb=20090928231953"))
-  ];
+  static List<Item>? items ;
 }
