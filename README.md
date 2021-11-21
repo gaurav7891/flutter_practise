@@ -1,4 +1,4 @@
-# day_1
+# Flutter Practise  
 
 A new Flutter project.
 
