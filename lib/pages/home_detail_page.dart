@@ -13,11 +13,12 @@ class HomeDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: context.backgroundColor,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
       ),
       bottomNavigationBar: Container(
-        color: Colors.white,
+        color: context.cardColor,
         child: ButtonBar(
           alignment: MainAxisAlignment.spaceBetween,
           buttonPadding: Vx.mOnly(right: 16),
@@ -26,8 +27,8 @@ class HomeDetailPage extends StatelessWidget {
             ElevatedButton(
                     onPressed: () {},
                     style: ButtonStyle(
-                        backgroundColor:
-                            MaterialStateProperty.all(MyTheme.darkBluishColor),
+                        backgroundColor: MaterialStateProperty.all(
+                            context.theme.buttonColor),
                         shape: MaterialStateProperty.all(StadiumBorder())),
                     child: "Add to Cart".text.make())
                 .wh(120, 50)
@@ -46,14 +47,11 @@ class HomeDetailPage extends StatelessWidget {
             arcType: VxArcType.CONVEY,
             edge: VxEdge.TOP,
             child: Container(
-              color: Colors.white,
+              color: context.cardColor,
               width: context.screenWidth,
               child: Column(
                 children: [
-                  catalog.name.text.xl4
-                      .color(MyTheme.darkBluishColor)
-                      .bold
-                      .make(),
+                  catalog.name.text.xl4.color(context.accentColor).bold.make(),
                   catalog.desc.text.textStyle(context.captionStyle!).xl.make(),
                   "Gubergren amet lorem labore ut vero, et abore ut vero, et aamet labore voluptua duo rebum eirmod et ipsum dolore. Dolore eirmod tempor clita sea voluptua consetetur aliquyam, dolores voluptua diam sanctus elitr et gubergren et eos lorem, voluptua vero ea eirmod sadipscing. Clita."
                       .text

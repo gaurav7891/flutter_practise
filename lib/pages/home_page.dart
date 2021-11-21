@@ -46,11 +46,14 @@ class _HomePageState extends State<HomePage> {
     final x = 12; // data can be modified
 
     return Scaffold(
-        backgroundColor: MyTheme.creamColor,
+        backgroundColor: context.theme.backgroundColor,
         floatingActionButton: FloatingActionButton(
           onPressed: () => Navigator.pushNamed(context, MyRoutes.cartRoute),
-          backgroundColor: MyTheme.darkBluishColor,
-          child: Icon(CupertinoIcons.cart),
+          backgroundColor: context.theme.buttonColor,
+          child: const Icon(
+            CupertinoIcons.cart,
+            color: Colors.white,
+          ),
         ),
         body: SafeArea(
           child: Container(
