@@ -6,7 +6,7 @@
 			"desc": "Apple iPhone 12th Generation",
 			"price": 999,
 			"color": "#33505a",
-			"image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_announce-iphone12pro_10132020_big.jpg.large.jpg"
+			"image": "https://cdn.tmobile.com/content/dam/t-mobile/en-p/cell-phones/apple/Apple-iPhone-13/Pink/Apple-iPhone-13-Pink-thumbnail.png"
 		},
 		{
 			"id": 2,
@@ -14,7 +14,7 @@
 			"desc": "Apple iPhone 13th Generation",
 			"price": 1999,
 			"color": "#33505a",
-			"image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pro-gallery-2-thumb_GEO_US?wid=282&hei=240&fmt=jpeg&qlt=80&.v=1631658248000"
+			"image": "https://5.imimg.com/data5/LC/DQ/AM/ANDROID-90078131/12-52-22-3e987769-a9c8-464f-8ea4-c88e42740d9d-png-500x500.png"
 		},
 		{
 			"id": 3,
@@ -22,7 +22,7 @@
 			"desc": "Apple iPhone 12th Generation",
 			"price": 999,
 			"color": "#33505a",
-			"image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_announce-iphone12pro_10132020_big.jpg.large.jpg"
+			"image": "https://www.android.com/static/2016/img/one/carousel/nokia_5_3_1x.png"
 		},
 		{
 			"id": 4,
@@ -30,7 +30,7 @@
 			"desc": "Apple iPhone 12th Generation",
 			"price": 999,
 			"color": "#33505a",
-			"image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_announce-iphone12pro_10132020_big.jpg.large.jpg"
+			"image": "https://www.eir.ie/opencms/export/sites/default/.galleries/eir/Christmas21/Apple_fg_2of2_iphone13_xmas_2560x550_281021-min.png"
 		},
 		{
 			"id": 5,
@@ -38,7 +38,7 @@
 			"desc": "Apple iPhone 12th Generation",
 			"price": 999,
 			"color": "#33505a",
-			"image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_announce-iphone12pro_10132020_big.jpg.large.jpg"
+			"image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-family-select-2021?wid=940&hei=1112&fmt=jpeg&qlt=80&.v=1629842667000"
 		},
 		{
 			"id": 6,
@@ -46,7 +46,7 @@
 			"desc": "Apple iPhone 12th Generation",
 			"price": 999,
 			"color": "#33505a",
-			"image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_announce-iphone12pro_10132020_big.jpg.large.jpg"
+			"image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone11-black-select-2019?wid=834&hei=1000&fmt=jpeg&qlt=95&.v=1566956144418"
 		},
 		{
 			"id": 7,
@@ -54,7 +54,7 @@
 			"desc": "Apple iPhone 12th Generation",
 			"price": 999,
 			"color": "#33505a",
-			"image": "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_announce-iphone12pro_10132020_big.jpg.large.jpg"
+			"image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-se-family-select-2020?wid=882&hei=1058&fmt=jpeg&qlt=80&.v=1586794486444"
 		}
 	]
 }
