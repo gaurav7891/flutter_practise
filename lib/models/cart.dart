@@ -1,6 +1,12 @@
 import 'package:day_1/models/catalog.dart';
 
 class CartModel {
+    // this is how we make the class as singleton in dart
+  static final cartModel = CartModel._internal();
+  CartModel._internal();
+
+  factory CartModel() => cartModel;
+
   late CatalogModel _catalog;
   // Collections of IDs - store IDs of each item
   final List<int> _itemIds = [];

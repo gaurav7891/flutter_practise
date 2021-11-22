@@ -35,6 +35,12 @@ class Item {
 }
 
 class CatalogModel {
+
+  // this is how we make the class as singleton in dart
+  static final catModel = CatalogModel._internal();
+  CatalogModel._internal();
+
+  factory CatalogModel() => catModel;
   static List<Item>? items;
 
   // get itme by id
