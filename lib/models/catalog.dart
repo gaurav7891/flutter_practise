@@ -1,5 +1,5 @@
 class Item {
-  String id;
+  int id;
   String name;
   String desc;
   num price;
@@ -15,13 +15,15 @@ class Item {
       required this.image});
 }
 
-final product = [
-  (Item(
-      id: "1234",
-      name: "asdasd",
-      desc: "adasd",
-      price: 123,
-      color: "#fff000d",
-      image:
-          "https://static.wikia.nocookie.net/horrormovies/images/0/0b/Johnny_Depp.jpg/revision/latest/top-crop/width/360/height/450?cb=20090928231953"))
-];
+class CatalogModel {
+  static final items = [
+    (Item(
+        id: 1,
+        name: "Johnny Depp",
+        desc: "Samundar ka lutera",
+        price: 100,
+        color: "#fff000d",
+        image:
+            "https://static.wikia.nocookie.net/horrormovies/images/0/0b/Johnny_Depp.jpg/revision/latest/top-crop/width/360/height/450?cb=20090928231953"))
+  ];
+}
