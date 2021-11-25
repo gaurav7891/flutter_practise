@@ -10,19 +10,37 @@ class CatalogList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-        shrinkWrap: true,
-        itemCount: CatalogModel.items!.length,
-        itemBuilder: (context, index) {
-          final catalog = CatalogModel.getByPosition(index);
-          return InkWell(
-            child: CatalogItem(catalog: catalog),
-            onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) => HomeDetailPage(catalog: catalog))),
-          );
-        });
+    return !context.isMobile
+        ? GridView.builder(
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 2, crossAxisSpacing: 20),
+            shrinkWrap: true,
+            itemCount: CatalogModel.items!.length,
+            itemBuilder: (context, index) {
+              final catalog = CatalogModel.getByPosition(index);
+              return InkWell(
+                child: CatalogItem(catalog: catalog),
+                onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            HomeDetailPage(catalog: catalog))),
+              );
+            })
+        : ListView.builder(
+            shrinkWrap: true,
+            itemCount: CatalogModel.items!.length,
+            itemBuilder: (context, index) {
+              final catalog = CatalogModel.getByPosition(index);
+              return InkWell(
+                child: CatalogItem(catalog: catalog),
+                onTap: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) =>
+                            HomeDetailPage(catalog: catalog))),
+              );
+            });
   }
 }
 
@@ -64,6 +82,3 @@ class CatalogItem extends StatelessWidget {
     )).color(context.cardColor).rounded.square(150).make().py16();
   }
 }
-
-
- 
