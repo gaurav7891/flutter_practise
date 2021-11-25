@@ -1,4 +1,5 @@
 import 'package:day_1/pages/home_detail_page.dart';
+import 'package:day_1/utils/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:day_1/models/catalog.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -34,11 +35,11 @@ class CatalogList extends StatelessWidget {
               final catalog = CatalogModel.getByPosition(index);
               return InkWell(
                 child: CatalogItem(catalog: catalog),
-                onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) =>
-                            HomeDetailPage(catalog: catalog))),
+                onTap: () => context.vxNav.push(
+                    Uri(
+                        path: MyRoutes.homeDetailsRoute,
+                        queryParameters: {"id": catalog.id.toString()}),
+                    params: catalog),
               );
             });
   }
